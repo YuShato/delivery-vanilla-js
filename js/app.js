@@ -1,5 +1,8 @@
+import Tabs from "./components/tabs.js";
+
 export default class App {
     init() {
-        console.log('hi22')
+        const tabs = new Tabs(`.js_tabs-block`, `.js_tab`);
+        tabs.init();
     }
 }
