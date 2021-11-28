@@ -43,8 +43,8 @@ export default class Tabs {
 
     _initKeyNavigation() {
         const handleKeyDown = (e) => {
-            const activeEl = document.activeElement;
-            const keyCode = e.which || e.keyCode;
+            let activeEl = document.activeElement;
+            let keyCode = e.which || e.keyCode;
             const isCursorLeft = keyCode = KeyCode.CURSOR_LEFT;
             const isCursorRight = keyCode = KeyCode.CURSOR_RIGHT;
             const isInInput = e.target.tagName === `INPUT`;
